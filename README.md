@@ -29,6 +29,8 @@ Tools > Add Tools > Libraries > Arduino(Firmata), Video, ControlP5, OpenCV  then
 
 6) Explore the capabalities of OpenCV by trying the examples that comes with the library. In processing, File-->examples-->openCV for processing. [Face Detection](https://github.com/atduskgreg/opencv-processing/blob/master/examples/FaceDetection/FaceDetection.pde) and [Background Subtraction](https://github.com/atduskgreg/opencv-processing/blob/master/examples/BackgroundSubtraction/BackgroundSubtraction.pde) are highly recommended.
 
+7) Data Folder contains the COM# this can be change to the Serial port your arduino is Assign to 
+
 **PS: In the examples provided by the library, size() function is not supported by latest versions of processing, replace it with surface.setSize()**
 
 ### Demo
@@ -48,6 +50,8 @@ So far my main focus was arduino boards, the following was tested with the UNO a
 3) Based on your setup and what you are trying to achieve from the processed image (moving servos to track the object of interest, locking the cam to your face, etc..), build your arduino circuit and simply write your arduino sketch inside [TrackingUI.pde](https://github.com/LilFinch/OpenCV-Tracking-Processing-UI/blob/master/TrackingUI/TrackingUI.pde), I have commented where should arduino variables, void setup() and void loop() go, so it should be a straight forward process. Make use of the object position variables (in this case r.x and r.y) in your arduino code.
 
 4) Simply run your processing sketch after uploading [Ard_Firmata.ino](https://github.com/LilFinch/OpenCV-Tracking-Processing-UI/blob/master/Ard_Firmata/Ard_Firmata.ino) to your board and watch your gadget tracking the object of your interest.
+
+5) the Pin D2 is the X Axis, Pin D3 is Y Axis, Pin D4 is Z Axis 
 
 ###Copyright & License
 
